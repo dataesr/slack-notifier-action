@@ -25,5 +25,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN}}
           slack_token: ${{ secrets.SLACK_TOKEN }}
-          slack_channel: '#gtest'
+          slack_channel: '#github-test'
           deployment_url: 'scanr.staging.dataesr.ovh'
