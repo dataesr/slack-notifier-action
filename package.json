@@ -1,0 +1,31 @@
+{
+  "name": "slack-notifier-action",
+  "version": "1.0.0",
+  "description": "This action allows to send a message in slack channels in a github actions pipeline.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/action.js -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dataesr/slack-notifier-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dataesr/slack-notifier-action/issues"
+  },
+  "homepage": "https://github.com/dataesr/slack-notifier-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.3.0",
+    "@actions/github": "^5.0.0",
+    "@slack/web-api": "^6.2.4"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.28.6",
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.23.4"
+  }
+}

@@ -1,0 +1,25 @@
+name: 'Slack notifier action'
+description: 'Notify in slack Github Actions workflows results.'
+author: '[folland87]'
+inputs:
+  github_token: 
+    description: 'Github token'
+    required: true
+  slack_token: 
+    description: 'Your application BOT token'
+    required: true
+  slack_channel:
+    description: 'Channel to publish to'
+    required: true
+  report_jobs:
+    description: 'Report all job status'
+    required: false
+    default: 'true'
+  deployment_url:
+    description: 'A link to visit a deployment'
+    required: false
+    default: ''
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
